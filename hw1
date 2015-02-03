@@ -1,10 +1,10 @@
 using System;
-
+// test comment
 namespace grade_calc.cs
 {
 	class MainClass
 	{
-		public static void Main (string[] args)
+		public static void Main (string[] args) //I don't recognize "(string[] args)" whats does it do?
 		{
 			double ExamsWeight, LabsWeight, HomeworkWeight, ProjectWeight, ParticipationWeight;
 			double ExamsGrade, LabsGrade, HomeworkGrade, ProjectGrade, ParticipationGrade;
@@ -48,9 +48,12 @@ namespace grade_calc.cs
 
 			double grade = (ExamWeight * ExamsGrade + HomeworkWeight * HomeworkGrade + LabsWeight * LabsGrade + ProjectWeight * ProjectGrade
 				+ ParticipationWeight * ParticipationGrade / 100.0;
+				// I don't see how this can properly compute the grade, you're lacking parentheses to guaranty order of operations is followed//
+				// I'll revise in the next push//
 
 				Console.WriteLine("Your grade is " + grade);
 
+				// all of these look like they are strings and not integers, when you put them in quotes, I'm not certain, i'll double check//
 				if (grade > "90") {
 					Console.WriteLine ("Your Grade is an A ");
 				}
