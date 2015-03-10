@@ -9,7 +9,7 @@ namespace IntroCS
 		public static void Main(string[]args)
 		{
 			{
-				string sample = "sample.txt";
+				string sample = "categories_comp150.txt";	//changed sample to actual file to pull from
 				string output = "output.txt";
 				Console.WriteLine("Directory of {0}: {1}",
 					sample, FIO.GetLocation(sample));
