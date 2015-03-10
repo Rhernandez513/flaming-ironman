@@ -61,15 +61,13 @@ namespace IntroCS
 		{
 			var reader = new StreamReader(categoryFileName);
 			string categories = reader.ReadLine();
-			string[] catnames = getStringArray (categories);
-			for (int i = 0; i < catnames.Length; i++)
+			string[] catNames = getStringArray (categories);
+			for (int i = 0; i < catNames.Length; i++)
 			{
-				Console.Write ("{0} {1}", i, catnames [i]);
-				string firstLetters = catnames[i];
+				string firstLetters = catNames[i];
 				string first_letter = firstLetters.Substring(0,1);
-				Console.Write("{0} {1}", i, first_letter);
 			}
-			return catnames;
+			return catNames;
 		}
 		static int[] weightValues(string categoryFileName)
 		{
@@ -84,11 +82,11 @@ namespace IntroCS
 				}
 				counter++;
 			}
-			for (int i = 0; i < weight_values.Length; i++)
-			{
-				Console.WriteLine("{0}{1}", i,
-					weight_values[i]);
-			}
+			//for (int i = 0; i < weight_values.Length; i++)
+			//{
+				
+				
+			//}
 
 			return weight_values;
 		}
@@ -107,12 +105,10 @@ namespace IntroCS
 				}
 				counter++;
 			}
-			for (int i = 0; i < item_values.Length; i++)
-			{
-
-				Console.WriteLine (" {0}{1}", i,
-					item_values [i]);
-			}
+			//for (int i = 0; i < item_values.Length; i++)
+			//{
+            //
+			//}
 			return item_values;
 		}
 		static string[] getRoster(string studentFileName, int targetLine)
@@ -129,10 +125,10 @@ namespace IntroCS
 				}
 				counter++;
 			}
-			for (int i=0; i < next_Student.Length; i++)
-			{
-				Console.Write ("{0}",next_Student[i]);
-			}
+			//for (int i=0; i < next_Student.Length; i++)
+			//{
+				
+			//}
 			Console.ReadLine ();
 			return next_Student;
 		}
