@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{608D4429-78E6-4BEF-B080-2C6BDE18A6E6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>grade_file4</RootNamespace>
+    <RootNamespace>IntroCS</RootNamespace>
     <AssemblyName>grade_file4</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
@@ -36,6 +36,12 @@
     <Compile Include="grade_file.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="fio.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ui\ui.csproj">
+      <Project>{2262ce21-c5ad-4ede-b384-ec2bd91585e6}</Project>
+      <Name>ui</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
