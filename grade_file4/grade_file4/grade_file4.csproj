@@ -38,6 +38,10 @@
     <Compile Include="fio.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\fio\fio.csproj">
+      <Project>{38702508-4bee-4055-b478-1f9fa30c1630}</Project>
+      <Name>fio</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\ui\ui.csproj">
       <Project>{2262ce21-c5ad-4ede-b384-ec2bd91585e6}</Project>
       <Name>ui</Name>
